@@ -2,16 +2,68 @@
 layout: base.html
 title: Home
 ---
-<div class="max-w-lg mx-auto mt-6 px-4 text-center">
-  <h1 class="font-semibold text-3xl">It’s (j)ust (e)leventy and (t)ailwind</h1>
-  <p>…OK, and a few other things; it's still *really* small though.</p>
-</div>
-<p class="flex items-center justify-center max-w-md mt-6 mx-auto px-4">
-  <a href="https://11ty.dev/" class="bg-gray-900 inline-block mr-6"><img src="img/11ty.svg" alt="Eleventy" class="h-24" /></a>
-  and
-  <a href="https://tailwindcss.com/" class="ml-6"><img src="img/tailwindcss.svg" alt="Tailwind CSS" class="w-64" /></a>
-</p>
-<p class="flex justify-center max-w-md mt-16 mx-auto">
-  <a href="https://github.com/marcamos/jet#readme" class="mr-6 underline">View on GitHub</a>
-  <a href="https://marcamos-jet.netlify.com/" class="underline">View on Netlify</a>
-</p>
+
+<body class="flex flex-col h-screen px-6 m-auto text-lg leading-7 bg-neutral text-neutral-900 sm:px-14 md:px-24 lg:px-32 dark:bg-neutral-800 dark:text-white max-w-7xl">
+  <main class=flex-grow>
+    <article class="flex flex-col items-center justify-center h-full mt-10 text-center">
+
+      <header class="flex flex-col items-center mb-3">
+        <img class="mb-2 rounded-full w-36 h-36" src=/img/estellobiscotto.jpg>
+        <h1 class="text-4xl font-extrabold dark:text-white">
+          Estelle
+        </h1>
+        <section class="pt-5 prose dark:prose-light">
+          <p class="font-bold text-sm mb-2">@estellobiscotto</p>
+          <p class="text-sm font-semibold">Personal trainer | Massothérapeute | STAPS</p>
+          <span class="text-sm font-mono text-gray-500">Amsterdam</span>
+        </section>
+      </header>
+
+      <div class="mt-2"></div>
+
+      <div class="px-4 mx-auto mb-4 sm:max-w-xl">
+        <div class="grid max-w-2xl sm:mx-auto">
+          <a href="#" target="_blank" class="overflow-hidden border hover:border-gray-400 transition-colors rounded-2xl shadow-sm">
+            <div class="flex items-center justify-center text-center p-5 bg-white rounded-sm">
+              <div class="pr-4 my-3">
+                <h6 class="mb-2 font-semibold text-xl">New Year's Resolution Workout Plan</h6>
+                <p class="text-sm text-gray-900">A doable and fun workout you will enjoy. This is a resolution that won't be hard to keep because I'm here to keep you motivated. I have many new exercises and tips to help you progress.
+                </p>
+                <div class="text-white bg-rose-600 mt-5 flex items-center justify-center p-4 rounded-xl">
+                  <div>
+                    <p class="font-semibold uppercase text-sm">Join Now</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- NEWS -->
+      <div class="flex flex-col flex-wrap min-w-full mt-4">
+        <a href="#" class="w-full flex items-center justify-center px-9 py-4 m-2 border border-transparent text-base font-bold uppercase text-white bg-zinc-800 hover:bg-zinc-700 md:py-4 md:text-base md:px-10">
+          About me
+        </a>
+        <a href="#" class="w-full flex items-center justify-center px-9 py-4 m-2 border border-transparent text-base font-bold uppercase text-white bg-zinc-800 hover:bg-zinc-700 md:py-4 md:text-base md:px-10">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+          </svg>
+          &nbsp Workout of the Week
+        </a>
+        <!-- LINK -->
+      </div>
+
+    </article>
+  </main>
+  <footer class=py-10>
+    <div class=text-center>
+      <p class="text-sm text-neutral-400 dark:text-neutral-500">
+        &copy;
+        2021
+        Estelle
+      </p>
+      <p class="text-xs text-neutral-300 dark:text-neutral-600">
+        Made by <a class="hover:underline hover:underline-primary-300 hover:text-primary-400" href=https:/ target=_blank rel="noopener noreferrer">M</a>
+      </p>
+    </div>
+  </footer>
